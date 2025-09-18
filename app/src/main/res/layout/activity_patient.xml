@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etPatientName"
+        android:hint="Họ tên bệnh nhân"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:padding="12dp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etPatientPhone"
+        android:hint="Số điện thoại"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:padding="12dp"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/btnAddPatient"
+        android:text="Thêm bệnh nhân"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:padding="12dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPatients"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>
